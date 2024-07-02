@@ -25,7 +25,11 @@ conda install -c conda-forge jupyter_core jupyterlab keras matplotlib mysql-libs
 conda install pytorch:pytorch
 
 #Part 4
-conda install -c conda-forge r-base scikit-learn scipy seaborn sqlite tensorflow wget yaml
+conda install -c conda-forge r-base scikit-learn scipy seaborn spyder sqlite tensorflow wget yaml
+
+#Updating all packages
+#This step will upgrade or downgrade all packages to work with each other
+conda update --all 
 
 #Exiting environment
 conda deactivate
