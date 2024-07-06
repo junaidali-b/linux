@@ -1,15 +1,21 @@
 #!/bin/bash
+
 clear
+
+#Renaming the terminal tab
+echo -ne "\033]30;System Update\007"
+
 echo "Pacman, yay and conda packages will now update."
-sudo pacman -Syu
+yes | sudo pacman -Syu
 clear
-yay -Syu
+yes | yay -Syu
 clear
-sudo pacman -Sc
-yay -Sc
+yes | sudo pacman -Sc
+yes | yay -Sc
 clear
+yes | conda update conda
 conda activate ml
-conda update --all
+yes | conda update --all
 conda deactivate
 clear
 echo "Update complete, here's a summary of the updated system:"
