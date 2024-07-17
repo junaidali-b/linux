@@ -19,4 +19,5 @@ yes | conda update --all
 conda deactivate
 clear
 echo "Update complete, here's a summary of the updated system:"
+echo -ne "\033]30;%d : %n\007"
 neofetch
